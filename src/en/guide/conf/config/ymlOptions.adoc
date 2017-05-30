@@ -20,7 +20,7 @@ You will need to have this in `build.gradle` to modify the `bootRun` target if `
 [source,groovy]
 ----
 bootRun {
-    systemProperties = System.properties
+    systemProperties System.properties
 }
 ----
 
@@ -29,6 +29,6 @@ For testing the following will need to change the `test` task as follows
 [source,groovy]
 ----
 test { 
-    systemProperties = System.properties 
+    systemProperties System.properties 
 }
 ----
